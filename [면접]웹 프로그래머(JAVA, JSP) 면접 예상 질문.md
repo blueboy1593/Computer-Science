@@ -32,16 +32,17 @@
    
 4. Overloading vs Overriding
    
+
 Overloading
-   
+
    - 같은 이름의 메소드를 여러개 정의하는 것
    - 매개변수의 타입이 다르거나 개수가 달라야 한다
-   
+
    Overriding
-   
+
    - 상속에서 나온 개념
    - 상위 클래스(부모 클래스)의 메소드를 하위 클래스(자식 클래스)에 재정의
-   
+
 5. Servlet, JSP
 
    Servlet - Container가 이해할 수 있게 구성된 순수 자바 코드로만 이루어진 것(Html in JAVA)
@@ -114,31 +115,127 @@ Overloading
 
 13. Framework
 
+14. Garbage Collection(가비지 콜렉션)
 
+    - 더이상 사용하지 않는 동적 할당된 메모리 블럭을 찾아 자동으로 다시 사용 가능한 자원으로 회수
+    - 가비지 컬렉터
 
+15. Primitive type / Reference type
 
+    Primitive type
 
+    변수에 값 자체를 저장
 
+    - 정수형
+    - 실수형
+    - 문자형
+    - 논리형
 
+    Wrapper Class를 통해 객체로 변형
 
+    Reference type
 
+    메모리상에 객체가 있는 위치를 저장
 
+    - Class
+    - Interface
+    - Array
 
+16. Wrapper Class
 
+    Primitive type으로 표현할 수 있는 간단한 데이터를 객체로 만들어야 할 경우 기능 지원
 
+17. Spring Framework(스프링 프레임워크)
 
+    오픈소스임
 
+    - 크기와 부하의 측면에서 경량
+    - 제어 역행(IoC)라는 기술을 통해 느슨한 결합을 도모
+    - 관점지향 프로그래밍(AOP)을 위한 풍부한 지원
+    - 확장성이 높다
 
+18. Thread
+    
+    Thread - 프로세스내에서 동시에 실행되는 독립적인 실행 단위
+    
+    - 자원을 많이 사용하지 않음
+    - 구현이 쉽다
+    - 범용성이 높다
+    
+    Process(프로세스) - 운영체제에서 실행중인 하나의 프로그램(하나 이상의 쓰레드)
+    
+    Thread 장점
+    
+    - 빠른 프로세스 생성
+    - 적은 메모리 사용
+    - 쉬운 정보 공유
+    
+    Thread 단점
+    
+    - 교착 상태에 빠질 수 있다.
+    
+    교착상태 - 하나 or 이상의 프로세스가 수행할 수 없는 어떤 특정시간을 기다리고 있는 상태
+    
+19. 접근제한자(Public > protected > default > private)
 
+    public - 접근 제한이 없다
 
+    protected - 같은 패키지 내, 다른 패키지에서 상속받아 자손클래스에서 접근 가능
 
+    default - 같은 패키지 내에서만 접근 가능
 
+    private - 같은 클래스 내에서만 접근 가능
 
+20. 소켓 통신(TCP / UDP)
 
+    Transmission Control Protocol
 
+    - 연결형 서비스 제공
+    - 높은 신뢰성 보장
+    - 연결의 설정(3-way handshaking)
+    - 연결의 해제(4-way handshaking)
+    - 데이터 흐름 제어, 혼잡 제어
+    - 전이중, 점대점 서비스(양방향 송수신 서비스)
 
+    User Datagram Protocol
 
+    - 비연결형 서비스 제공
+    - 신뢰성 낮음
+    - 데이터의 전송 순서 바뀔 수 있음
+    - 데이터 수신 여부 확인 X
+    - TCP보다 빠른 전송속도
 
+21. Stack / Queue
+
+    Stack
+
+    - Last in First Out 후입선출
+    - push()로 데이터 입력, pop()로 데이터 출력
+    - 역순 문자열 만들기, 수식의 괄호 검사, 수식의 후위 표기법 변환 등에 사용
+
+    Queue
+
+    - First In First Out 선입선출
+    - enQueue()를 이용한 데이터 입력, deQueue()를 이용한 데이터 출력
+    - Linear Queue(선형큐)는 메모리 재사용이 불가능
+    - Circular Queue(원형큐)는 이를 보완함
+
+22. Singleton Design Pattern
+
+    클래스 인스턴스가 하나만 만들어지도록 하고, 그 인스턴스에 대한 전역 접근을 제공한다.
+
+23. Database에서 Index의 역할은?
+
+    Index
+
+    - 테이블에 대한 동작의 속도를 높여주는 자료 구조
+    - 검색을 빠르게 할 수 있다
+
+24. DB에서 자료를 검색하는 두 가지 방법
+
+    FTS(Full Table Scan) : 테이블을 처음부터 끝까지 검색하는 방법
+
+    Index Scan : 인덱스를 검색하여 해당 자료의 테이블을 액세스 하는 방법.
 
 
 
